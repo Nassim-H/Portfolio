@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
   </head>
 <body>
@@ -33,6 +34,12 @@
                     <li class="nav-item ">
                       <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
+                    <li class="nav-item ">
+                      <a href="img/NassimHassain.pdf" class="nav-link" target=”_blank”>CV en français</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a href="img/English_Nassim.png" class="nav-link" target=”_blank”>CV en anglais</a>
+                    </li>
                     <li class="nav-item">
                       <a href="english.html" class="nav-link"><i class="bi bi-translate"></i></a>
                     </li>
@@ -47,11 +54,14 @@
         <div class="row pt-5" id="intro2"> 
                 <h1 class="fw-bold text-center" id="nom">Nassim Hassain</h1>
                 <p></p>
-                <p >Etudiant en 2ème année de <a href="https://www.letudiant.fr/etudes/dut/but-informatique-ex-dut-informatique.html" target="_blank">B.U.T Informatique</a>, je suis à la recherche de sensations fortes, avec le sourire.</p>
+                <p >Etudiant en 2ème année de <a href="https://www.letudiant.fr/etudes/dut/but-informatique-ex-dut-informatique.html" target="_blank">B.U.T Informatique</a>, je suis à la recherche d'une nouvelle aventure, avec le sourire.</p>
                 <p>Je vous invite à découvrir mes compétences acquises ET en cours de développement (rien n'est jamais acquis) ainsi que mes différents projets.</p>
-            
-        </div>
+          <script>
+            alert("Arthur")
+          </script>
+              </div>
       </div>
+    
 </section>
 <section class="py-5 bg-light" id="skills">
   <div class="container" >
@@ -136,15 +146,20 @@
       <section class="py-5" id="dernier" >
 
         <div class="container" id="portfolio">
-        <div class="row py-4">
-
-          <div class="col">
-            <h1 class="text-center">Mes projets</h1>
-          </div>
+          <div class="row gx-3 " >
+            <h1 class="text-center ">Mes projets</h1>
+          
+          <div class="col-12 col-md-12">
 
           <p>Les projets : la meilleure façon de montrer ses compétences, ses facilité et les défis que l'on se lance.</p>
           <p>En vert, les projest terminées, en bleu: les projets en cours de réalisation</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="container" id="portfolio">
+          <div class="row gx-3 " >
+            
           <div class="card text-center text-success  border-success mb-5">
             
             <div class="card-header">
@@ -153,7 +168,7 @@
             <div class="card-body">
               <h5 class="card-title">Site événementiel</h5>
               <p class="card-text">J'ai développé un site statique en HTML/CSS provoumant l'événement.</p>
-              <a href="#" class="btn btn-primary">Voir le code</a>
+              <a href="https://github.com/Nassim-H/site-evenementiel" class="btn btn-primary" target="_blank">Voir le code</a>
             </div>
             <div class="card-footer text-muted">
               HTML/CSS
@@ -168,7 +183,7 @@
             <div class="card-body">
               <h5 class="card-title">Site de films</h5>
               <p class="card-text">Je conçois un site en Python avec Flask dans lequel j'alimente une base de données de films.</p>
-              <a href="#" class="btn btn-primary">Voir le code</a>
+              <a href="https://github.com/Nassim-H/blog" class="btn btn-primary" target="_blank">Voir le code</a>
             </div>
             <div class="card-footer text-muted">
               Python (Flask)
@@ -177,15 +192,15 @@
 
           <div class="card text-center text-info border-info mb-5">
             <div class="card-header">
-              Site d'entreprise
+              Marathon du Web
             </div>
             <div class="card-body">
-              <h5 class="card-title">Site commercial</h5>
-              <p class="card-text">Je développe un site en PHP dans le but de créer un site d'entreprise de commerce.</p>
-              <a href="#" class="btn btn-primary">Code non disponible</a>
+              <h5 class="card-title">Exposition fractales</h5>
+              <p class="card-text">Nous avons conçu le site d'une exposition de fractales.</p>
+              <a href="#" class="btn btn-secondary" >Code non disponible</a>
             </div>
             <div class="card-footer text-muted">
-              Python (Flask)
+              PHP-HTML-CSS (Laravel)
             </div>
           </div>
 
@@ -195,16 +210,17 @@
               Portfolio
             </div>
             <div class="card-body">
-              <h5 class="card-title">Porftlio </h5>
+              <h5 class="card-title">Portfolio </h5>
               <p class="card-text">Ce portfolio vous permet de voir en temps réel mes compétences, développé avec Boostrap.</p>
-              <a href="#" class="btn btn-primary">Voir le code</a>
+              <a href="https://github.com/Nassim-H/Portfolio" class="btn btn-primary" target="_blank">Voir le code</a>
             </div>
             <div class="card-footer text-muted">
-              HTML/CSS (Boostrap)
+              HTML-CSS (Boostrap)
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        
     </section>
 
         <footer class="border-top">

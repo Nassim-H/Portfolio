@@ -51,12 +51,20 @@ p {
 }
 
 #intro{
-    height: 1000px;
+    height: 400px;
 }
 
 #intro2{
     text-align: center;
-    
+        
+}
+
+.bg-dark{
+    background-color:#2a0a5e ;
+}
+#bouton{
+   width: 200px; 
+   text-align: center;
 }
 
 #nom{
@@ -78,8 +86,6 @@ h1{
 }
 
 #portfolio{
-height: 300px;
-width: 600px;
 top: 60px;
 left: calc(50% - 300px);
 }
@@ -97,7 +103,7 @@ left: 0px;
 }
 
 .card:not(:first-child) {
-    margin-left: -50px;
+    margin-left: 140px;
 }
 
 .card:hover {
@@ -143,4 +149,7 @@ stroke-width: 2px;
 .card:hover .stroke {
 stroke-dashoffset: 100;
 transition: 0.6s ease-out;
+}
+
+.cartes{
 }
