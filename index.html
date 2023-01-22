@@ -10,7 +10,9 @@
     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">  
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+
 
   </head>
 <body>
@@ -35,11 +37,9 @@
                       <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item ">
-                      <a href="img/NassimHassain.pdf" class="nav-link" target=”_blank”>CV en français</a>
+                      <a href="img/NassimHassain.pdf" class="nav-link" target=”_blank”>CV</a>
                     </li>
-                    <li class="nav-item ">
-                      <a href="img/English_Nassim.png" class="nav-link" target=”_blank”>CV en anglais</a>
-                    </li>
+                    
                     <li class="nav-item">
                       <a href="english.html" class="nav-link"><i class="bi bi-translate"></i></a>
                     </li>
@@ -54,11 +54,33 @@
         <div class="row pt-5" id="intro2"> 
                 <h1 class="fw-bold text-center" id="nom">Nassim Hassain</h1>
                 <p></p>
-                <p >Etudiant en 2ème année de <a href="https://www.letudiant.fr/etudes/dut/but-informatique-ex-dut-informatique.html" target="_blank">B.U.T Informatique</a>, je suis à la recherche d'une nouvelle aventure, avec le sourire.</p>
+                
+                <p id="presentation" ><a onclick='document.getElementById("presentation").innerHTML = "Fou amoureux de : adrénaline, surpassement dans tout mes projets, je projette donc ici de vous surprendre. Il est dit que les apparences sont parfois trompeuses, je ne sais pas si cela est vrai, mais je veux vous surprendre !"'>Etudiant</a> en 2ème année de <a href="https://www.letudiant.fr/etudes/dut/but-informatique-ex-dut-informatique.html" target="_blank">B.U.T Informatique</a>, je suis à la recherche d'une nouvelle aventure, avec le sourire.</p>
                 <p>Je vous invite à découvrir mes compétences acquises ET en cours de développement (rien n'est jamais acquis) ainsi que mes différents projets.</p>
           
               </div>
       </div>
+      <div class="row pt-4" id="app">
+        <a class="text-center" href="#" @click = 'saluer'>Dire bonjour !</a>
+
+      </div>
+
+      <script>
+        const vm = Vue.createApp({
+            data(){
+                return {
+                    message: "",
+                }
+            },
+            methods:{
+                saluer(){
+                   alert("Bonjour ! Je suis fais en VueJS, des petits indices dans le site vous donneront plus d'informations sur d'autres secrets !");
+                }
+            }
+        }).mount("#app");
+
+    </script>
+
     
 </section>
 <section class="py-5 bg-light" id="skills">
@@ -99,8 +121,8 @@
                           </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            Apprendre à questionner une base de donnée, à en créer de A à Z mais surtout à comprendre comment celles-là fonctionnent sont pour moi une priorité pour manier les données informatiques..
+                          <div class="accordion-body" id="donnees">
+                            Apprendre à questionner une base de donnée, à en créer de A à Z mais surtout à comprendre comment celles-là <a onclick='document.getElementById("donnees").innerHTML ="Comment je fonctionne ? Je définis mes objectifs et je fonce, rien ne me stoppe sauf le sommeil !"'>fonctionnent</a> sont pour moi une priorité pour manier les données informatiques..
                           </div>
                         </div>
                     </div>
@@ -113,7 +135,7 @@
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            J'ai essayé de comprendre les modèles TCP/IP ainsi que OSI durant mon adolescence mais c'est seulement durant mes études que j'ai approfondis. J'ai appris à configurer une machine sur un réseau, programmer en bash et créer un serveur et client en Java.
+                            J'ai aborddé les modèles TCP/IP ainsi que OSI durant mon adolescence mais c'est seulement durant mes études que j'ai approfondis ces sujets et pratiqués avec WireShark. J'ai appris à configurer une machine sur un réseau, programmer en bash et créer un serveur et client en Java.
                           </div>
                         </div>
                     </div>
@@ -150,7 +172,7 @@
           <div class="col-12 col-md-12">
 
           <p>Les projets : la meilleure façon de montrer ses compétences, ses facilité et les défis que l'on se lance.</p>
-          <p>En vert, les projest terminées, en bleu: les projets en cours de réalisation</p>
+          <p>En vert, les projets terminés, en bleu: les projets en cours de réalisation</p>
             </div>
           </div>
         </div>
@@ -221,6 +243,14 @@
         
     </section>
 
+
+    <div class="container">
+      <div class="row gx-8">
+          <p class="text-center">Remontez tout en haut et cliquez sur Etudiant, la deuxième version commence...</p>
+      </div>
+
+
+    </div>
         <footer class="border-top">
         <div class="row py-4">
             <div class="col-12 col-md-4 text-center user-select-all">nassimhassain@gmail.com</div>
