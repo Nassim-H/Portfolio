@@ -25,30 +25,6 @@ p {
     text-align : center;
     padding-bottom: 2em;
 }
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* sur Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
 
 #intro{
     height: 400px;
@@ -87,35 +63,18 @@ h1{
 
 #portfolio{
 top: 60px;
-left: calc(50% - 300px);
 }
 
 .card {
 height: 300px;
 width: 200px;
+margin-left: 2%;
 background-color: #17141d;
 border-radius: 10px;
 box-shadow: -1rem 0 3rem #000;
 /*   margin-left: -50px; */
-transition: 0.4s ease-out;
-position: relative;
-left: 0px;
 }
 
-.card:not(:first-child) {
-    margin-left: 140px;
-}
-
-.card:hover {
-transform: translateY(-20px);
-transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-position: relative;
-left: 50px;
-transition: 0.4s ease-out;
-}
 
 .title {
 color: white;
@@ -123,33 +82,4 @@ font-weight: 300;
 position: absolute;
 left: 20px;
 top: 10px;
-}
-
-
-
-.card:hover .filledbar {
-width: 120px;
-transition: 0.4s ease-out;
-}
-
-
-
-.stroke {
-stroke: white;
-stroke-dasharray: 360;
-stroke-dashoffset: 360;
-transition: 0.6s ease-out;
-}
-
-svg {
-fill: #17141d;
-stroke-width: 2px;
-}
-
-.card:hover .stroke {
-stroke-dashoffset: 100;
-transition: 0.6s ease-out;
-}
-
-.cartes{
 }

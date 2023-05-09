@@ -55,14 +55,15 @@
                 <h1 class="fw-bold text-center" id="nom">Nassim Hassain</h1>
                 <p></p>
                 
-                <p id="presentation" ><a onclick='document.getElementById("presentation").innerHTML = "Fou amoureux de : adrénaline, surpassement de soi, je projette donc ici de me dépasser pour vous surprendre. Il est dit que les apparences sont parfois trompeuses, je ne sais pas si cela est vrai, mais peut-être ce site basique cache des choses surprenantes !, Cliquez donc sur -découvrir- juste en dessous afin de découvrir mes hobbies"'>Etudiant</a> en 2ème année de <a href="http://www.iut-lens.univ-artois.fr/formations/but-informatique/" target="_blank">B.U.T Informatique</a>, je suis à la recherche d'une nouvelle aventure, avec le sourire.</p>
-                <p id="hobbies">Je vous invite à <a onclick='document.getElementById("hobbies").innerHTML ="Passionné de défis, je fais du sport en compétition (karaté). Ceinture noire et combattant, le sport me donne de la force au lieu de la prendre. Je veux devenir la meilleure version de moi-même, le sport en est une cause qui renforce mon mental et mon physique. Rejoignez le titre projets et cliquez sur -façon-"' >découvrir</a> mes compétences acquises ET en cours de développement (rien n'est jamais acquis) ainsi que mes différents projets.</p>
+                <p id="presentation" ><a onclick='document.getElementById("presentation").innerHTML = "Fou amoureux de : adrénaline, surpassement de soi, je projette donc ici de me dépasser pour vous surprendre. Il est dit que les apparences sont parfois trompeuses, je ne sais pas si cela est vrai, mais peut-être ce site basique cache des choses surprenantes !, Cliquez donc sur <strong>découvrir</strong>"'>Etudiant</a> en 2ème année de <a href="http://www.iut-lens.univ-artois.fr/formations/but-informatique/" target="_blank">B.U.T Informatique</a>, je suis à la recherche d'une nouvelle aventure, avec le sourire.</p>
+                <p id="hobbies">Je vous invite à <a onclick='document.getElementById("hobbies").innerHTML ="Passionné de défis, je fais du sport en compétition (karaté). Ceinture noire et combattant, le sport me donne de la force au lieu de la prendre. Je veux devenir la meilleure version de moi-même, le sport en est une cause qui renforce mon mental et mon physique. Rejoignez le titre projets et cliquez sur <strong>façon</strong>"' >découvrir</a> mes compétences acquises ET en cours de développement ainsi que mes différents projets dans ce portfolio (derrière cette simplicité se cache une originalité qui pourrait vous surprendre !).</p>
           
               </div>
       </div>
       <div class="row pt-4" id="app">
-        <a class="text-center" href="#" role="button" @click = 'saluer'>Dire bonjour !</a>
-
+        <div class="col d-flex justify-content-center">
+          <a class="btn btn-primary text-center" href="#" role="button" @click = 'saluer'>Dire bonjour !</a>
+        </div>
       </div>
 
       <script>
@@ -74,7 +75,7 @@
             },
             methods:{
                 saluer(){
-                   alert("Bonjour ! Je suis fais en VueJS, des petits indices dans le site vous donneront plus d'informations sur d'autres secrets !");
+                   alert("Bonjour ! Je suis fais en VueJS. En effet, j'acquiers de nouvelles compétences dès l'occasion venue, j'ai des bases en VueJS mais je suis dans un niveau beaucoup plus complet en Angular");
                 }
             }
         }).mount("#app");
@@ -135,7 +136,7 @@
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            J'ai aborddé les modèles TCP/IP ainsi que OSI durant mon adolescence mais c'est seulement durant mes études que j'ai approfondis ces sujets et pratiqués avec WireShark. J'ai appris à configurer une machine sur un réseau, programmer en bash et créer un serveur et client en Java.
+                            J'ai abordé les modèles TCP/IP ainsi que OSI durant mon adolescence mais c'est seulement durant mes études que j'ai approfondis ces sujets et pratiqués avec WireShark. J'ai appris à configurer une machine sur un réseau, programmer en bash et créer un serveur et client en Java.
                           </div>
                         </div>
                     </div>
@@ -165,66 +166,70 @@
 
       <section class="py-5" id="dernier" >
 
-        <div class="container" id="portfolio">
+        <div class="container-sm" id="portfolio">
           <div class="row gx-3 " >
             <h1 class="text-center ">Mes projets</h1>
           
           <div class="col-12 col-md-12">
 
-          <p id="projects">Les projets : la meilleure <a onclick='document.getElementById("projects").innerHTML = "De quelle façon puis-je contribuer à faire évoluer votre entreprise ? Je veux dire, en dehors de mes compétences que je perfectionne de jours en jours ? Je suis ambitieux, je pense que cela est un super-pouvoir, comment fait Elon Musk sans ambition ? Comment internet est naît sans ambition ? Comment pouvons-nous changer le monde sans ambition ? Cliquez enfin sur -vert-... "'>façon</a> de montrer ses compétences, ses facilité et les défis que l'on se lance.</p>
-          <p id="merci">En <a onclick="document.getElementById('merci').innerHTML = 'Merci pour le temps accordé, si vous êtes arrivé jusque là, peut-être mon site a atteint son objectif : surprendre'">vert</a>, les projets terminés, en bleu: les projets en cours de réalisation</p>
+          <p id="projects">Les projets : la meilleure <a onclick='document.getElementById("projects").innerHTML = "De quelle <strong class=\"text-danger\">façon</strong> puis-je contribuer à faire évoluer votre entreprise ? Je veux dire, en dehors de mes compétences que je perfectionne de jours en jours ? Je suis ambitieux, je pense que cela est un super-pouvoir, comment fait Elon Musk sans ambition ? Comment internet est naît sans ambition ? Comment pouvons-nous changer le monde sans ambition ? Cliquez enfin sur <strong>vert</strong>... "'>façon</a> de montrer ses compétences, ses facilité et les défis que l'on se lance.</p>
+          <p id="merci">En <a onclick="document.getElementById('merci').innerHTML = 'Merci pour le temps accordé, si vous êtes arrivé jusque là, peut-être mon site a atteint son objectif : <em>surprendre</em>'">vert</a>, les projets terminés, en bleu: les projets en cours de réalisation</p>
             </div>
           </div>
         </div>
 
         <div class="container" id="portfolio">
-          <div class="row gx-3 " >
-            
+          <div class="row gx-3 ">
+
+          <div class="col">
           <div class="card text-center text-success  border-success mb-5">
-            
             <div class="card-header">
               Site Vitrine
             </div>
             <div class="card-body">
               <h5 class="card-title">Site événementiel</h5>
-              <p class="card-text">J'ai développé un site statique en HTML/CSS provoumant l'événement.</p>
+              <p class="card-text">J'ai développé un site statique en HTML/CSS provoumant l'événement en créant la maquette ainsi que toute la partie design.</p>
               <a href="https://github.com/Nassim-H/site-evenementiel" class="btn btn-primary" target="_blank">Voir le code</a>
             </div>
             <div class="card-footer text-muted">
               HTML/CSS
             </div>
           </div>
+          </div>
 
-
+          <div class="col">
           <div class="card text-center text-info border-info mb-5">
             <div class="card-header">
               Blog de données
             </div>
             <div class="card-body">
               <h5 class="card-title">Site de films</h5>
-              <p class="card-text">Je conçois un site en Python avec Flask dans lequel j'alimente une base de données de films.</p>
+              <p class="card-text">Je conçois un site en Python avec Flask dans lequel j'alimente une base de données de films, une sorte de blog.</p>
               <a href="https://github.com/Nassim-H/blog" class="btn btn-primary" target="_blank">Voir le code</a>
             </div>
             <div class="card-footer text-muted">
               Python (Flask)
             </div>
           </div>
+        </div>
 
-          <div class="card text-center text-info border-info mb-5">
+        <div class="col">
+          <div class="card text-center text-success  border-success mb-5">
             <div class="card-header">
-              Marathon du Web
+              Interrogation d'API
             </div>
             <div class="card-body">
-              <h5 class="card-title">Exposition fractales</h5>
-              <p class="card-text">Nous avons conçu le site d'une exposition de fractales.</p>
-              <a href="#" class="btn btn-secondary" >Code non disponible</a>
+              <h5 class="card-title">L'envol</h5>
+              <p class="card-text">J'ai conçu un site en pure PHP avec des packages (Guzzle, League/Route, Twig) afin d'interroger des API.</p>
+              <a href="https://github.com/Nassim-H/airports" class="btn btn-primary" target="_blank">Voir le code</a>
             </div>
             <div class="card-footer text-muted">
-              PHP-HTML-CSS (Laravel)
+              PHP-HTML-CSS
             </div>
           </div>
+        </div>
 
-
+        <div class="col">
           <div class="card text-center text-info border-info mb-5">
             <div class="card-header">
               Portfolio
@@ -239,6 +244,7 @@
             </div>
           </div>
         </div>
+      </div>
         </div>
         
     </section>
@@ -246,7 +252,7 @@
 
     <div class="container">
       <div class="row gx-8">
-          <p class="text-center">Remontez tout en haut et cliquez sur -Etudiant-, la deuxième version commence...</p>
+          <p class="text-center text-warning"><strong>Remontez tout en haut et cliquez sur <strong>Etudiant</strong>, la deuxième version commence...</strong></p>
       </div>
 
 
